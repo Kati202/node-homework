@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=H1title %></title>
+    <link rel="stylesheet" href="/res/style.css">
+</head>
+<body>
+<header>
+    <h1><%=H1title %>(Utolsó Királyság)</h1>
+    <nav>
+    <ul>
+        <li><a href="/">Szereplők</a></li>
+       <li><a href="/episode-page">Évadok</a></li>
+       <li> <a href="/castle-page">Várak</a></li>
+    </ul>
+      
+    </nav>
+</header>
+<main>
+    <p>Az utolsó királyság egy brit történelmi dráma televíziós sorozat, amelyet Stephen Butchard készített és fejlesztett a televízió számára, Bernard Cornwell The Saxon Stories című regénysorozataalapján. A sorozatot 2015. október 10-én mutatták be a BBC Two-n . A második sorozat koprodukciója után a Netflix 2018-ban megvásárolta a sorozatot. A sorozat 2022. március 9-én ért véget öt sorozat után, összesen 46 epizóddal. A sorozat történetét lezáró egész estés folytatást, a Seven Kings Must Diet címmel 2023. április 14-én mutatták be a Netflixen.</p>
+    <h3>Kezdetek...</h3>
+    <p>Osbert Ealdorman (Earl) Uhtred második fia , a northumbriai Bebbanburg ura.Dánok érkeznek Bebbanburg partjaira, és Ealdorman Uhtred első fiát, akit ugyanúgy Uhtrednek hívnak, felderítés közben megölik. Ealdorman Uhtred ezután átnevezi Osbertet Uhtrednek. Ealdorman Uhtred, és más helyi nemesek  hadseregükkel együtt meghalnak a dánok által elfoglalt Eoferwic ( York ) elleni katasztrofális támadás során, az ifjabb Uhtredetet pedig a Rettenthetetlen Ragnar dán jarl elfogja.Ragnar, akit szórakoztat a fiú bátorság, amikor megtámadta, megtartja és úgy neveli, mint a saját fiait, többek között harcossá képezi. Uhtred nagybátyja, Aelfric elveszi Bebbanburgot, és bitorolja Uhtredtől, a jogos örököstől a Bebbenburgi várat és vezetését.Uhtred összebarátkozik Ragnar legkisebb fiával, Rorikkal, és sok összetűzése van egy fiúval, Svennel, Kjartan fiával, Ragnar egyik hajómesterével . Egy napon Sven elrabolja Ragnar lányát, Thyrát, és leveszi a ruháinak egy részét, hogy szexuálisan megszégyenítse . Uhtred megtámadja Svent ezért. Uhtred, Rorik és Thyra visszaszöknek Ragnar csarnokába. Ragnar elbocsátja Kjartant a szolgálatából. A kardja markolatával kinyomja Sven egyik szemét . Uhtred csatlakozik Ragnarhoz és a dánokhoz a kelet-angliai portyákon , részt vesz Mercia és East Anglia meghódításában , valamint Wessex inváziójában . Egy pap, Beocca, egy régi családi barát ösztönzésére rabolják el. Megszökik Wessexből, és újra csatlakozik Ragnarhoz.Uhtred élvezi az életet Ragnarral, de amíg egy éjszaka elmegy, Kjartan és emberei felgyújtotják Ragnar házát, és megölnek mindenkit, aki menekülni próbál, kivéve Thyrát. Ragnar inkább bent marad, mintsem meghaljon Kjartan feltételei szerint. Thyrát elfogják és Svennek adják.Uhtred ezután csatlakozik Alfréd királyhoz Wessexben. Ott Alfréd ragaszkodására vonakodva tanul meg írni és olvasni, mert a király katonai parancsnokainak el kell tudni olvasni írott parancsait. Ő kapja Alfred 12 hajóból álló új kis flottájának parancsnokságát. A dánokkal vívott csata után találkozik az ifjabb Ragnarral, Ragnar  legidősebb fiával, és elmondja neki, hogyan halt meg az apja, és hogy elrabolták Thyrát. Elválnak a barátok, megesküdve, hogy egy napon bosszút állnak Kjartanon, és megmentik Thyrát.Alfred megparancsolja Uhtrednek, hogy vegyen feleségül egy árva wessexi lányt, Mildrith-et, hogy megpróbálja Wessexhez kötni. Uhtrednek nem mondják, hogy feleségül véve apja hatalmas adósságát is átvállalja az egyház felé .Ezt követően részt vesz a Guthrum elleni ostromban , és a dánok és a nyugat-szászok békéjére kicserélt túszok csoportjába tartozik. Télen a dánokkal maradva a városban újra találkozik Ragnarral, aki megmenti a haláltól, amikor Guthrum megszegi a békét és meggyilkolja a többi szász túszt. Uhtred ezután megszökik, hogy megkeresse a feleségét. A fiatalabb Odda, egy másik wessexi  vitte északra.Harcol a kritikus cynwiti csatában , ahol egy az egy elleni harcban megöli a híres dán vezetőt, Ubbát . Uhtred ezután Exanceasterbe lovagol, hogy megkeresse feleségét és újszülött fiát, ahelyett, hogy azonnal személyesen értesítse Alfredet a győzelméről, ahogy bölcsebb barátja határozottan tanácsolta.</p>
+    <h3>Jelentősebb karakterek</h3>
+    <div class="characters"></div>
+    
+    <% charters.forEach(function(charter) { %>
+        <div class="charter">
+            <h4><%= charter.name %></h4>
+            <img src="<%= charter.picture_url %>" alt="<%= charter.name %>">
+            <p><%= charter.data  %></p>
+        </div>
+    <% }); %>
+   
+</main>
+<script src="static/res/showMessage.js"></script>
+
+
+(Idő szűkében csak 6 embert sikerült letárolni de itt vannak még a főbb karakterek az előző homeworkbe kigyűlytöttem őket ezért is ilyen a css is).
+    <h4>Hild(Eva Birthistle)</h4>
+    <img src="pictures/hild.webp" alt="Hild">
+    <br>
+    <h4>Aelswith(Eliza Butterworth)</h4>
+    <img src="pictures/aelswith.webp" alt="Aelswith">
+    <br>
+    <h4>Finan(Mark Rowley)</h4>
+    <img src="pictures/finan.webp" alt="Finan">
+    <br>
+    <h4>Sihtric(Arnas Fedaravičius)</h4>
+    <img src="pictures/shitric.webp" alt="Sihtric">
+    <br>
+    <h4>Pyrlig(Cavan Clerkin)</h4>
+    <img src="pictures/pyrlig.webp" alt="Pyrlig">
+    <br>
+    <h4>Haesten(Jeppe Beck Laursen)</h4>
+    <img src="pictures/haesten.webp" alt="Haesten">
+    <br>
+    <h4>Aethelred(Toby Regbo)</h4>
+    <img src="pictures/aethelred.webp" alt="Aethelred">
+    <br>
+    <h4>Aethelflaed(Millie Brady)</h4>
+    <img src="pictures/aethelflaed.webp" alt="Aethelflaed">
+    <br>
+    <h4>Osferth(Ewan Mitchell)</h4>
+    <img src="pictures/osferth.webp" alt="Osferth">
+    <br>
+    <h4>Aldhelm(James Northcote)</h4>
+    <img src="pictures/aldhelm.webp" alt="Aldhelm">
+    <br>
+    <h4>Edward(Timothy Innes)</h4>
+    <img src="pictures/edward.webp" alt="Edward">
+</div>
+
+</main>
+
+
+</body>
+</html>

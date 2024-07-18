@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= charter.name %> - Karakter részletei</title>
+    <link rel="stylesheet" href="/res/style.css">
+</head>
+<body>
+<header>
+    <h1><%= charter.name %> (Utolsó Királyság)</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Főoldal</a></li>
+            <li><a href="/episode-page">Évadok</a></li>
+            <li><a href="/castle-page">Várak</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="charter">
+        <h2><%= charter.name %></h2>
+        <img src="<%= charter.picture_url %>" alt="<%= charter.name %>">
+        <p><%= charter.data %></p>
+    </div>
+</main>
+</body>
+</html>
